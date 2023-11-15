@@ -1,0 +1,177 @@
+
+.wrapper{
+    display: flex;
+    max-width: 1920px;
+    position: absolute;
+    transform: translate(0%,150%);
+    z-index: 811;
+  }
+  .wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(20%);
+    transition: transform 0.1s linear;
+    z-index: 9000000;
+  }
+  
+  .wrapper i:active{
+    transform: translateY(25%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel{
+      height: 180px;
+      width: 900px;
+      transform: translate(0,20%); max-height: 200px;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img, iframe{
+    pointer-events: none;
+  }
+  .carousel img, iframe {
+      height: 100%; /* Allow the height to adjust proportionally */
+      max-width: 100%; /* Make the width responsive */
+      object-fit: cover;
+      user-select: none;
+      margin-left: 14px;
+      width: calc(100% / 3);
+    }
+    
+    .carousel img:first-child {
+      margin-left: 0px;
+    }
+    
+    .preview {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 60%; /* Adjust the height to your preference */
+      width: 40%; /* Adjust the width to your preference */
+      overflow: hidden; /* Prevent content overflow */
+        resize: both; 
+        transform: translate(75%,20%);
+    }
+    
+    .preview img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: auto; /* Allow the height to adjust proportionally */
+      max-width: 100%; /* Make the width responsive */
+      display: block; /* Remove any default inline-block spacing */
+      overflow: hidden;
+    }
+  
+    @media screen and (max-width: 1366px) {
+        .preview{visibility: hidden;}
+    
+        .wrapper{
+          transform: translate(0%);
+          position: absolute;
+          height: 80%;
+          width: 100%;
+          
+          #left{
+            z-index: 90000;
+            transform: translate(100%,-50%);
+          }
+    
+          #right{
+            transform: translate(-100%,-50%);
+          }
+        }
+    
+        .carousel{
+            max-height: 1000px;
+          transform: translate(0,20%);
+          position: absolute;
+          width: 100%;
+          height: 900px;
+          
+    
+          iframe{
+            width: 100%;
+            height: 100%;
+            pointer-events: auto;
+            transform: translate(-1%);
+          }
+    
+          .pngI{
+            position: absolute;
+          }
+    
+        }
+    
+        
+      .carousel img{
+        width: 100%;
+        height: 100%;
+        transform: translate(-1%);
+      }
+
+      body{
+        #features{
+            
+            .feature-cards{
+                .card{
+                    transform: translate(-15%);
+                }
+            }
+        }
+      }
+    }
+    
+    @media screen and (max-width: 650px) {
+        .preview{visibility: hidden;}
+
+
+        .wrapper{
+            max-height: 100%;
+            max-width: 100%;
+        }
+        .carousel{
+            width: auto;
+            height: 100%;
+            transform: translate(7%,5%);
+            img{
+                height: 100%;
+                width: 100%;
+              }
+              iframe{
+                width: 100%;
+                height: 100%;
+                pointer-events: auto;
+
+              }
+        }
+
+        
+}
