@@ -14,10 +14,10 @@ html{
 
 .container {
     width: 100%;
-    max-width: 1680px;
+    max-width: 100%;
     margin: 0 auto;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 100px;
+    padding-right: 150px;
     z-index: 9977;
     overflow-x: hidden;
 
@@ -527,20 +527,43 @@ body{
                 text-align: center;
             }
         }
-        .card, .card4{
-            width: 750px;
-            max-height: 500px;
-            transform: translateX(73%);
-            .info {
+
+        .feature-cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+            .card, .card4{
                 display: flex;
-                flex-direction: row; /* Para que los elementos se alineen en una fila */
-                align-items: flex-start;
-                text-align: center;
-        
-                .text {
-                    flex: 1; 
-                    width: 100%;
-                    align-items: center;/* Para que el texto ocupe todo el espacio disponible en el contenedor */
+                flex-direction: column;
+                align-items: center;
+                flex: 1;
+                min-width: 350px;
+
+                .info{
+
+                    align-items: center;
+                    text-align: center;
+                    i{
+                        color: #fff;
+                        font-size: 8rem;
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: 1.4rem;
+
+                    }
+                    h1{
+                        text-align: center;
+
+                    }
+                    p{
+                        font-size: 1.1rem;
+
+                    }
+
+                    a{
+                        background-color: #12002f;
+                    }
                 }
             }
         }
@@ -582,10 +605,11 @@ body{
     }
 
     #projects{
+        align-items: center;
+        text-align: center;
 
         .header{
-
-            
+            flex-direction:row;
             select {
                 font-family: 'Press Start 2P', cursive;
                 font-size: 16px;
@@ -615,15 +639,15 @@ body{
         .feature-cards{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             gap: 2rem;
+            text-align: center;
             .card, .card4{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 flex: 1;
                 min-width: 350px;
-
                 .info{
                     i{
                         color: #fff;
@@ -648,13 +672,8 @@ body{
                 overflow: visible;
                 width: 500px;
                 height: 500px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 min-width: 350px;
                 max-width: 500px;
-                
-
                 .content {
                     width: 100%;
                     height: 100%;
@@ -764,7 +783,7 @@ body{
                     justify-content: space-between;
 
                     .comic-button {
-                        transform: translate(65%,-30%);
+                        
                         display: inline-block;
                         padding: 10px 20px;
                         font-size: 24px;
@@ -785,7 +804,7 @@ body{
                         color: #ff5252;
                         border: 2px solid #ff5252;
                         box-shadow: 5px 5px 0px #ff5252;
-                        transform: translate(70%,-30%);
+                        transform: translate(1%,-1%);
                     }
                     
                     .comic-button:active {
@@ -884,7 +903,7 @@ body{
                 &:nth-child(2){
                     .back {
                         .back-content{
-                            background-image: url(../images/projects/Futurama/PortF.png);
+                            background-image: url(../images/projects/hAncestral/portH.png);
                         }
                     }
                 }
@@ -892,7 +911,7 @@ body{
                 &:nth-child(3){
                     .back {
                         .back-content{
-                            background-image: url(../images/projects/vrRoom/portVR.png);
+                            background-image: url(../images/projects/Futurama/PortF.png);
                         }
                     }
                 }
@@ -900,7 +919,7 @@ body{
                 &:nth-child(4){
                     .back {
                         .back-content{
-                            background-image: url(../images/projects/Culturalife/portC.png);
+                            background-image: url(../images/projects/vrRoom/portVR.png);
                         }
                     }
                 }
@@ -908,7 +927,7 @@ body{
                 &:nth-child(5){
                     .back {
                         .back-content{
-                            background-image: url(../images/projects/hAncestral/portH.png);
+                            background-image: url(../images/projects/Culturalife/portC.png);
                         }
                     }
                 }
@@ -945,6 +964,14 @@ body{
                     }
                 }
             }
+    }
+    .viewMore{
+        transform: translateY(0%);
+    }
+
+    #hiddenCard{
+        visibility:hidden;
+        position: absolute;
     }
 }
 
@@ -1165,19 +1192,19 @@ body{
     @media screen and (max-width: 1366px){
         body{
             #about{
-                .header{
-                    transform: translate(44%);
-                }
-                .card{
-                    transform: translate(50%);
-                    max-width: 500px;
-                }
+                align-items: center;
             }
 
             #projects{
                 .feature-cards{
                     .card2{
                         flex: 1;
+                    }
+                    .card2{
+                        &:hover .content {
+                            transform: rotateY(0deg);
+                        }
+                        
                     }
                 }
             }
@@ -1195,14 +1222,19 @@ body{
     @media screen and (max-width: 1079px) {
         header{
             .container{
-                transform: translate(-8%,-10%);
+                position: absolute;
+                transform: translate(-0%,-10%);
+                .hamburguer{
+                    transform: translate(-1%);
+                }
+                
                 &.is-scrolling-down{
                     background-color: rgba(1, 1, 71, 0);
                     .container{
                         padding-top: 16px;
                         padding-bottom: 16px;
                     }
-                    transform: translate(-8%, -100%);
+                    transform: translate(0%, -100%);
                     transition: 0.5s;
                 }
         
@@ -1212,11 +1244,11 @@ body{
                         padding-top: 16px;
                         padding-bottom: 16px;
                     }
-                    transform: translate(-8%, 1%);
+                    transform: translate(0%, 1%);
                     transition: 0.5s;
                 }
             }
-            height: 100vh;
+            height: 100dvh;
             padding-bottom: 40px;
             .info-text{
                 h1{
@@ -1286,18 +1318,6 @@ body{
     
                 .right-align{
                     text-align: right;
-                }
-            }
-        }
-    
-        body{
-            #about{
-                .header{
-                    transform: translate(42%);
-                }
-                .card{
-                    transform: translate(7%);
-                    max-width: 500px;
                 }
             }
         }
