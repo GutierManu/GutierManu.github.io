@@ -1,5 +1,15 @@
 body{
 
+  header{
+    text-align: center;
+    align-items: center;
+    .info-text{
+      .Titulo{
+        transform: translateY(830%);
+      }
+    }
+  }
+
     .card3{
         padding: 30px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.35);
@@ -124,10 +134,8 @@ body{
 
 
 .Titulo{
-    position: absolute;
-    border-radius: 20%;
+    border-radius: 0%;
     text-decoration: none;
-    transform: translate(360%,-170%);
 
     .cta {
         display: flex;
@@ -240,14 +248,6 @@ body{
         
     }
 
-    .Titulo{
-      transform: translate(90%,-500%);
-
-      .cta{
-        font-size: 60px;
-      }
-    }
-
     body{
       #features{
         .feature-cards{
@@ -305,13 +305,7 @@ body{
 
 @media screen and (max-width: 900px){
 
-  .Titulo{
-    transform: translate(45%,-250%);
 
-    .cta{
-      font-size: 45px;
-    }
-  }
 
   body #features .feature-cards {
     transform: translate(15%);
@@ -327,6 +321,16 @@ body{
 }
 
 body{
+
+  header{
+    text-align: center;
+    align-items: center;
+    .info-text{
+      .Titulo{
+        transform: translateY(700%);
+      }
+    }
+  }
   #features{
     .feature-cards{
       display: flex;

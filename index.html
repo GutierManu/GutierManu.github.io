@@ -6,7 +6,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/logo/logo.png" type="image/x-icon">
-    <title>Personal Portafolio</title>
+    <meta property="og:title" content="Manuel Gutiérrez Rivas - Portfolio">
+    <meta property="og:description" content="My projects as a game & app developer">
+    <title>Manuel Gutiérrez Rivas - Portfolio</title>
 </head>
 <body>
     
@@ -29,7 +31,6 @@
     </header>
     <nav class="mobile-nav">
         <a href="#about">About Me</a>
-        <a href="projects.html#projects">Projects</a>
         <a href="hireMe.html">Contact Me</a>
     </nav>
 
@@ -39,53 +40,413 @@
         </div>
 
         <div class="feature-cards">
-        <div class="card">
-            <div class="info">
-                <div class="text">
-                    <h1>I'm a game and app developer with experience in Unity, GameMaker Studio 2, and currently exploring Unreal. I create a wide range of experiences within the 3D and 2D environments, including VR and AR.
-                    </h1>
-                    <br>
-                    <br>
-                    <a href="hireMe.html">Contact</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <section id="features">
-        <div class="header">
-            <h1>Projects</h1>
-        </div>
-        <div class="feature-cards">
-            <div class="card">
-                <div class="info" >
-                    <i class='bx bx-child'></i>
-                    <div class="content">
-                        <h1>Personal</h1>
-                        <p>
-                            Projects that I've conceptualized and executed independently. These projects are a reflection of my personal interests, creative vision, and problem-solving abilities, as well as my passion for what I do.
-                        </p>
-                        <br>
-                        <br>
-                        <br>
-                        <a href="projects.html#projects">See more</a>
-                    </div>
-                </div>
-            </div>
             <div class="card">
                 <div class="info">
-                    <i class='bx bx-code-alt' ></i>
-                    <h1>Profesional</h1>
-                    <p>
-                        Projects that I've worked on either independently or collaboratively for clients, employers, or within a professional context. These projects aim to satisfy client demands, working within established guidelines and deadlines, and delivering results that align with business objectives.
-                    </p>
-                    <br>
+                    
+                        <h1>I'm a game and app developer with experience in Unity, GameMaker Studio 2, and currently exploring Unreal. I create a wide range of experiences within the 3D and 2D environments, including VR and AR.
+                        </h1>
                         <br>
-                        <a href="projects.html#projects">See more</a>
+                        <br>
+                        <a href="hireMe.html">Contact</a>
+                    
                 </div>
             </div>
-            
+        </div>
+    </section>
+
+    <section id="projects" class="info-section">
+        <div class="header">
+            <h1>Projects</h1>
+            <!--Colocar el link de tu github en un #-->
+            <a href="https://github.com/GutierManu">My GitHub</a>
+        </div>
+        <div class="feature-cards">
+              <!--Tarjeta para proyectos 
+              copiar y pegar despues del div de cierre de class card2 para 
+              agregar mas proyectos-->
+              <!--Profesional Card-->
+              <div class="card2" onclick="window.open('./projects/BYORacer.html')">
+                <div class="content">
+                  <div class="back">
+                    <h3>BYORacer</h3>
+                    <div class="back-content">
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle">
+                      </div>
+                      <div class="circle" id="right">
+                      </div>
+                      <div class="circle" id="bottom">
+                      </div>
+                    </div>
+              
+                    <div class="front-content">
+                      <!--Categoria-->
+                      <small class="badge" value="Profesional">Profesional</small>
+                      <div class="description">
+                        <div class="title">
+                          <p class="title">
+                            <!--Nombre especifico-->
+                            <strong>BYORacer</strong>
+                          </p>
+                        </div>
+                        <!--Informacion del proyecto/producto-->
+                        <p class="card-footer">
+                          BYORacer immerses players in a captivating sci-fi, post-apocalyptic world where they engage in thrilling competition using their BYOCraft and Apostle NFTs. It's a game that blends strategy with racing as players customize their BYOCrafts' stats based on their hard-earned experience points.
+                        </p>
+                      </div>
+                      <button class="comic-button" id="changeStyle">View More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card2" onclick="window.open('./projects/Honduras-ancestar.html')">
+                <div class="content">
+                  <div class="back">
+                    <h3>Honduras Ancestral</h3>
+                    <div class="back-content">
+                      <div id="imge">
+                      <!--agregar la imagen para la portada del card colocar ruta en lugar de #-->
+                        <img src="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle">
+                      </div>
+                      <div class="circle" id="right">
+                      </div>
+                      <div class="circle" id="bottom">
+                      </div>
+                    </div>
+              
+                    <div class="front-content">
+                      <!--Categoria-->
+                      <small class="badge" value="Profesional">Profesional</small>
+                      <div class="description">
+                        <div class="title">
+                          <p class="title">
+                            <!--Nombre especifico-->
+                            <strong>Honduras Ancestral</strong>
+                          </p>
+                        </div>
+                        <!--Informacion del proyecto/producto-->
+                        <p class="card-footer">
+                          Honduras Ancestral is an Augmented Reality (AR) application commissioned by CANATURH, the leading organization representing the private tourism sector in Honduras. This app offers users a unique and captivating way to explore the rich history and culture of Honduras, with a focus on two significant locations: the Ruins of Copan and the Fortress of San Fernando de Omoa.                        </p>
+                      </div>
+                      <button class="comic-button" id="changeStyle">View More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Personal Card-->
+              <div class="card2" onclick="window.open('./projects/Futurama-Birthday-VR.html')">
+                <div class="content">
+                  <div class="back">
+                    <h3>Futurama Birthday VR</h3>
+                    <div class="back-content">
+                      <div id="imge">
+                      <!--agregar la imagen para la portada del card colocar ruta en lugar de #-->
+                        <img src="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle">
+                      </div>
+                      <div class="circle" id="right">
+                      </div>
+                      <div class="circle" id="bottom">
+                      </div>
+                    </div>
+              
+                    <div class="front-content">
+                      <!--Categoria-->
+                      <small class="badge" value="Personal">Personal</small>
+                      <div class="description">
+                        <div class="title">
+                          <p class="title">
+                            <!--Nombre especifico-->
+                            <strong>
+                              Futurama Birthday VR
+                            </strong>
+                          </p>
+                        </div>
+                        <!--Informacion del proyecto/producto-->
+                        <p class="card-footer">
+                          This is a project created to celebrate the birthday of a friend, paying homage to their favorite show, Futurama, and their passion for Arduino. In this immersive VR experience, players embark on an exciting journey filled with puzzles and challenges, where they must shoot Bender clones and gather Arduino parts to construct a device that unveils a hidden birthday message at the end.
+                        </p>
+                      </div>
+                      <button class="comic-button" id="changeStyle">View More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <!--Hidden Cards-->
+              <div class="card2" id="hiddenCard" onclick="window.open('./projects/VR-room.html')">
+                <div class="content">
+                  <div class="back">
+                    <h3>VR Room</h3>
+                    <div class="back-content">
+                      <div id="imge">
+                      <!--agregar la imagen para la portada del card colocar ruta en lugar de #-->
+                        <img src="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle">
+                      </div>
+                      <div class="circle" id="right">
+                      </div>
+                      <div class="circle" id="bottom">
+                      </div>
+                    </div>
+              
+                    <div class="front-content">
+                      <!--Categoria-->
+                      <small class="badge" value="Personal">Personal</small>
+                      <div class="description">
+                        <div class="title">
+                          <p class="title">
+                            <!--Nombre especifico-->
+                            <strong>
+                              VR Room
+                            </strong>
+                          </p>
+                        </div>
+                        <!--Informacion del proyecto/producto-->
+                        <p class="card-footer">
+                          This project serves as a comprehensive exploration of the capabilities achievable in VR development with Unity. The project immerses users in their own fantasy space within VR, offering the opportunity to interact with a variety of objects in unique and engaging ways.
+                        </p>
+                      </div>
+                      <button class="comic-button" id="changeStyle">View More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Personal Card-->
+              <div class="card2" id="hiddenCard" onclick="window.open('./projects/Culturalife.html')">
+                <div class="content">
+                  <div class="back">
+                    <h3>Culturalife</h3>
+                    <div class="back-content">
+                      <div id="imge">
+                      <!--agregar la imagen para la portada del card colocar ruta en lugar de #-->
+                        <img src="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle">
+                      </div>
+                      <div class="circle" id="right">
+                      </div>
+                      <div class="circle" id="bottom">
+                      </div>
+                    </div>
+              
+                    <div class="front-content">
+                      <!--Categoria-->
+                      <small class="badge" value="Personal">Personal</small>
+                      <div class="description">
+                        <div class="title">
+                          <p class="title">
+                            <!--Nombre especifico-->
+                            <strong>Culturalife</strong>
+                          </p>
+                        </div>
+                        <!--Informacion del proyecto/producto-->
+                        <p class="card-footer">
+                          Culturalife emerged from a challenge with open-ended guidelines and a time limit of four days. The objective was to develop a small 2D simulation game prototype, akin to titles like The Sims and Stardew Valley, within the simulation game genre. The challenge demanded key elements, including a player character capable of interacting with the game world, a shop system for buying and selling items, and the ability to equip and unequip purchased items.
+                        </p>
+                      </div>
+                      <button class="comic-button" id="changeStyle">View More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card2" id="hiddenCard" onclick="window.open('./projects/CABEI-rollercoaster.html')">
+                <div class="content">
+                  <div class="back">
+                    <h3>CABEI Rollercoaster</h3>
+                    <div class="back-content">
+                      <div id="imge">
+                      <!--agregar la imagen para la portada del card colocar ruta en lugar de #-->
+                        <img src="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle">
+                      </div>
+                      <div class="circle" id="right">
+                      </div>
+                      <div class="circle" id="bottom">
+                      </div>
+                    </div>
+              
+                    <div class="front-content">
+                      <!--Categoria-->
+                      <small class="badge" value="Profesional">Profesional</small>
+                      <div class="description">
+                        <div class="title">
+                          <p class="title">
+                            <!--Nombre especifico-->
+                            <strong>CABEI Rollercoaster</strong>
+                          </p>
+                        </div>
+                        <!--Informacion del proyecto/producto-->
+                        <p class="card-footer">
+                          A VR experience created for the Central American Bank for Economic Integration (CABEI) and targeted exclusively for the Meta Quest 1. This unique VR adventure takes users on a rollercoaster ride within the CABEI building, featuring six distinct stations, each representing a CABEI-sponsored project in Central American countries. At each station, users encounter a detailed diorama and relevant project data. This project was developed as an advergame, designed to be showcased at CABEI-hosted events.                      </div>
+                          <button class="comic-button" id="changeStyle">View More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Personal Card-->
+              <div class="card2" id="hiddenCard" onclick="window.open('./projects/AR-portal.html')">
+                <div class="content">
+                  <div class="back">
+                    <h3>AR Portal</h3>
+                    <div class="back-content">
+                      <div id="imge">
+                      <!--agregar la imagen para la portada del card colocar ruta en lugar de #-->
+                        <img src="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle">
+                      </div>
+                      <div class="circle" id="right">
+                      </div>
+                      <div class="circle" id="bottom">
+                      </div>
+                    </div>
+              
+                    <div class="front-content">
+                      <!--Categoria-->
+                      <small class="badge" value="Personal">Personal</small>
+                      <div class="description">
+                        <div class="title">
+                          <p class="title">
+                            <!--Nombre especifico-->
+                            <strong>AR Portal</strong>
+                          </p>
+                        </div>
+                        <!--Informacion del proyecto/producto-->
+                        <p class="card-footer">
+                          A project focused on demonstrating some of the capabilities of AR development in Unity. The app uses the camera to detect flat surfaces in the real world. Once these flat surfaces are detected, the user can instantiate a portal with 3 different environments (for this project, house areas are featured). The portal works both ways, the user is able to enter the digital environment by the front or the back side, and equally exit by any of these sides. The user is also able to exit (destroy) the environment by tapping on the pertinent button, allowing them to place the AR Portal in a different position.                        </p>
+                      </div>
+                      <button class="comic-button" id="changeStyle">View More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Personal Card-->
+              <div class="card2" id="hiddenCard" onclick="window.open('./projects/BrOWL.html')">
+                <div class="content">
+                  <div class="back">
+                    <h3>brOWL</h3>
+                    <div class="back-content">
+                      <div id="imge">
+                      <!--agregar la imagen para la portada del card colocar ruta en lugar de #-->
+                        <img src="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle">
+                      </div>
+                      <div class="circle" id="right">
+                      </div>
+                      <div class="circle" id="bottom">
+                      </div>
+                    </div>
+              
+                    <div class="front-content">
+                      <!--Categoria-->
+                      <small class="badge" value="Personal">Personal</small>
+                      <div class="description">
+                        <div class="title">
+                          <p class="title">
+                            <!--Nombre especifico-->
+                            <strong>brOWL</strong>
+                          </p>
+                        </div>
+                        <!--Informacion del proyecto/producto-->
+                        <p class="card-footer">
+                          Owl Brawl is an ambitious project designed as a fighting and party game, featuring a range of exciting game modes in its future plans. In its current state, the game offers a thrilling Versus Mode where players engage in fierce competition by attempting to push their opponents off the stage. With its whimsical physics and charming graphics, Owl Brawl emphasizes the importance of quick reflexes and strategic maneuvers. By default, players take control of an endearing owl character, with plans to introduce additional skins for further customization.                      </div>
+                          <button class="comic-button" id="changeStyle">View More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Personal Card-->
+              <div class="card2" id="hiddenCard" onclick="window.open('./projects/Internet-guardians.html')">
+                <div class="content">
+                  <div class="back">
+                    <h3>Internet Guardians</h3>
+                    <div class="back-content">
+                      <div id="imge">
+                      <!--agregar la imagen para la portada del card colocar ruta en lugar de #-->
+                        <img src="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle">
+                      </div>
+                      <div class="circle" id="right">
+                      </div>
+                      <div class="circle" id="bottom">
+                      </div>
+                    </div>
+              
+                    <div class="front-content">
+                      <!--Categoria-->
+                      <small class="badge" value="Personal">Personal</small>
+                      <div class="description">
+                        <div class="title">
+                          <p class="title">
+                            <!--Nombre especifico-->
+                            <strong>Internet Guardians</strong>
+                          </p>
+                        </div>
+                        <!--Informacion del proyecto/producto-->
+                        <p class="card-footer">
+                          Created for the Opera GX Game Jam held in Game Jolt in August 2021, this game was designed around the theme "UFOs and the Internet" and developed within a two-week time frame. In this game, players embark on a solo adventure or join forces in multiplayer mode, facing the formidable task of safeguarding the Internet from relentless bugs. As the gameplay unfolds, the challenge intensifies with every passing second, creating an adrenaline-pumping experience. Players also have the opportunity to earn coveted medals that serve as a testament to their performance throughout the game.
+                    </div>
+                    <button class="comic-button" id="changeStyle">View More</button>
+
+                  </div>
+                </div>
+              </div>
+        </div>
+        </div>
+        <button id="toggleButton" class="viewMore">View More</button>
+        
+
     </section>
 
 
@@ -94,5 +455,6 @@
     </button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/togglebtn.js"></script>
 </body>
 </html>
